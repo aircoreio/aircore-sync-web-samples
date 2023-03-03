@@ -1,0 +1,23 @@
+{
+  "name": "aircore-sync-web-samples",
+  "workspaces": [
+    "sync-audio/*",
+    "sync-video/*"
+  ],
+  "version": "1.0.0",
+  "description": "Sample integrations of the Aircore SDKs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aircoreio/aircore-sync-web-samples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aircoreio/aircore-sync-web-samples/issues"
+  },
+  "homepage": "https://github.com/aircoreio/aircore-sync-web-samples#readme"
+}

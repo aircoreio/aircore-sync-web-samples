@@ -1,5 +1,5 @@
 {
-  "name": "@aircore/vue-sample",
+  "name": "@aircore/vue-sync-audio-sample",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

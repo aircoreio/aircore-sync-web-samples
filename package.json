@@ -2,7 +2,7 @@
   "name": "aircore-sync-web-samples",
   "workspaces": [
     "sync-audio/*",
-    "sync-video/*"
+    "sync-chat/*"
   ],
   "version": "1.0.0",
   "description": "Sample integrations of the Aircore SDKs",

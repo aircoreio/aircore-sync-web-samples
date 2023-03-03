@@ -1,5 +1,5 @@
 {
-  "name": "@aircore/react-sample",
+  "name": "@aircore/react-sync-audio-sample",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

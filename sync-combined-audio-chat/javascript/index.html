@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Aircore Media Panel - Basic HTML Example</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Safari and firefox polyfill for packages peer dependencies  -->
+  <script async src="https://ga.jspm.io/npm:es-module-shims@1.7.0/dist/es-module-shims.js"></script>
+
+  <script type="importmap">
+    {
+      "imports": {
+       "@aircore/aircore-panel-core": "https://unpkg.com/@aircore/aircore-panel-core@3.2.0-RC.1/dist/index.js"
+      }
+   }
+  </script>
+  <script type="module">
+    import { createClientWithPublishableKey } from 'https://unpkg.com/@aircore/aircore-panel-core@3.2.0-RC.1/dist/index.js';
+    import { MediaPanel } from 'https://unpkg.com/@aircore/aircore-media-panel@3.2.0-RC.1/dist/index.js';
+    import { ChatPanel } from 'https://unpkg.com/@aircore/aircore-chat-panel@3.2.0-RC.1/dist/index.js';
+
+    const publishableApiKey = 'ADD_YOUR_PUBLISHABLE_API_KEY_HERE'; // get your api key on https://developer.aircore.io
+    const channelId = 'YOUR_CHANNEL_ID';
+    const userId = 'YOUR_USER_ID' + Math.floor(Math.random() * 1000);
+
+    const client = createClientWithPublishableKey(publishableApiKey, userId);
+    client.setUserDisplayName("John Doe");
+    client.setUserAvatarUrl("https://picsum.photos/200/200");
+    client.connect(channelId);
+
+    const mediaPanel = MediaPanel("#my-combined-panel", {
+      client,
+      channelId,
+      config: {
+          expandedStateOptions: {
+            placement: 'bottom',
+            autoHide: false,
+            expandOnLoad: true,
+          },
+        },
+    });
+
+    const chatPanel = ChatPanel(null, {
+      client,
+      channelId,
+      config: {
+          expandedStateOptions: {
+            placement: 'bottom',
+            autoHide: false,
+            expandOnLoad: true,
+          },
+        },
+    });
+
+    mediaPanel.combine(chatPanel);
+  </script>
+  <div class="container">
+    <!-- Combine Media and Chat panel will be rendered in here -->
+    <div id="my-combined-panel"></div>
+  </div>
+</body>
+</html>

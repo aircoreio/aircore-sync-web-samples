@@ -6,11 +6,6 @@ For more information you can check out the [docs](https://docs.aircore.io) or ju
 
 ## Setup Instructions
 
-There are several ways you can run the samples.
-
-Note if you are running this in [GitHub codespaces](https://docs.github.com/en/codespaces/getting-started/quickstart)
-then the dependencies are already installed for you.  If you are running locally then you'll need to install the dependencies.
-
 ### NPM workspaces
 
 **Note:** For npm version 7 or above 

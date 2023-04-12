@@ -40,7 +40,7 @@ npm run dev
 ```
 
 ## Sync Audio
-- [Quickstart](https://docs.aircore.io/web/mediapanel/quickstart)
+- [Quickstart](https://docs.aircore.io/getting-started/sync-web-quickstart)
 
 ### Samples
 - [NextJS](/sync-audio/nextjs)
@@ -49,7 +49,7 @@ npm run dev
 - [Javascript](/sync-audio/javascript)
 
 ## Sync Chat
-- [Quickstart](https://docs.aircore.io/web/chatpanel/quickstart)
+- [Quickstart](https://docs.aircore.io/getting-started/chat-web-quickstart)
 
 ### Samples
 - [NextJS](/sync-chat/nextjs)

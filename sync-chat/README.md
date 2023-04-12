@@ -1,6 +1,6 @@
 # Sync Chat Web SDK
 
-- [Quickstart](https://docs.aircore.io/web/chatpanel/quickstart)
+- [Quickstart](https://docs.aircore.io/getting-started/chat-web-quickstart)
 
 
 ## Samples

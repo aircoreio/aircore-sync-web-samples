@@ -1,6 +1,6 @@
 # Sync Audio Web SDK
 
-- [Quickstart](https://docs.aircore.io/web/mediapanel/quickstart)
+- [Quickstart](https://docs.aircore.io/getting-started/sync-web-quickstart)
 
 
 - [NextJS](nextjs)
